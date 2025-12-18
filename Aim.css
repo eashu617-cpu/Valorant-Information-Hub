@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(145deg, #121824, #0b1020);
+    color: white;
+}
+
+header {
+    background: #11151d;
+    padding: 1rem;
+    border-bottom: 2px solid #ff4655;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ff4655;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #ff4655;
+}

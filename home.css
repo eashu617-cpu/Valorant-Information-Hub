@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(145deg, #121824, #0b1020);
+    color: white;
+    line-height: 1.6;
+}
+header {
+    background: linear-gradient(180deg, #11151d, #0e121a);
+    padding: 1rem;
+    border-bottom: 2px solid #ff4655;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    color: #ff4655;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 8px rgba(255, 70, 85, 0.35);
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+nav a {
+    color: white;
+    padding: 6px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    position: relative;
+    transition: background 0.25s ease, box-shadow 0.25s ease;
+}
+nav a:hover {
+    background: #ff4655;
+    box-shadow: 0 0 12px rgba(255, 70, 85, 0.5);
+}
+section {
+    padding: 2rem;
+    max-width: 11000px;
+    margin: auto;
+}
+.home-content p {
+    opacity: 0.92;
+}
+.rule-list,
+.mode-list {
+    margin-top: 1rem;
+    padding-left: 1rem;
+    list-style: none;
+}
+.rule-list li,
+.mode-list li {
+    padding: 6px 0;
+    border-left: 2px solid rgba(255, 70, 85, 0.3);
+    padding-left: 12px;
+}
+.rule-list li::before,
+.mode-list li::before {
+    content: "• ";
+    color: #ff4655;
+}
+span {
+    color: red;
+    font-size: 30px;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+}
+.game-r {
+    padding: 14px;
+    border-radius: 14px;
+    background: linear-gradient(145deg, #02021b, #05052a);
+    border: 1px solid rgba(255, 70, 85, 0.25);
+    box-shadow:
+        0 18px 35px rgba(0, 0, 0, 0.65),
+        inset 0 0 10px rgba(255, 70, 85, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.game-r:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 22px 40px rgba(0, 0, 0, 0.75),
+        inset 0 0 14px rgba(255, 70, 85, 0.15);
+}
+#username {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #ff4655;
+    text-shadow: 0 0 6px rgba(255, 70, 85, 0.4);
+}

@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="si.css">
+    </head>
+    <body>
+        <header>
+            <div class="nav-container">
+            <div class="logo">Valorant Hub</div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="agents.html">Agents</a></li>
+                    <li><a href="maps.html">Maps & Modes</a></li>
+                    <li><a href="Aim & More.html">Aim & More</a></li>
+                    <li><a href="si.html">Sign in</a></li>
+                </ul>
+            </nav>
+        </div>
+        </header>
+        
+    <div class="login-box">
+        <h2>Sign In</h2>
+
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+         Enter age :<input type="text" id="age" placeholder="Age">
+
+        <button onclick="signIn()">Login</button>
+
+        <p id="message"></p>
+    </div>
+
+    <script>
+        function signIn() {
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            let message = document.getElementById("message");
+            if (username === "" || password === "") {
+                message.style.color = "red";
+                message.innerText = "All fields are required";
+            }
+            else if (password.length < 8){
+                message.style.color = "red";
+                message.innerText = "Password must be atleast of 8 characters";
+            }else if (username.length < 3){
+                message.style.color = "red";
+                message.innerText = "Username should be atleast of 3 characters";
+            }
+            else {
+                message.style.color = "lightgreen";
+                message.innerText = "Login is successful!";
+            }}
+            let age = docuemnt.getElementById("age").value;
+            let ageprint = document.getElementById("printage");
+            ageprint.innerHTML = age;
+    </script>
+    </body>
+</html>
